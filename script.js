@@ -37,7 +37,7 @@ const btn=document.querySelector("#btn");
 window.addEventListener("load",getQuote);
 
 function getQuote(){
-    fetch("http://api.quotable.io/random")
+    fetch("https://api.quotable.io/random")
     .then(res=>res.json())
     .then(data => {
         quote.innerHTML=`"${data.content}"`;
