@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    background:#010e1b;
+    margin:0 100px ;
+}
+body::before{
+    content:"";
+    position: absolute;
+    top:0%;
+    left:-1%;
+    width:100%;
+    height:100%;
+  
+    background:linear-gradient(#ff3c00,#e0c217);
+    clip-path: polygon(20% 10%,40% 40%,20% 75%);
+}
+body:after{
+content:"";
+position:absolute;
+top:0%;
+left:-1%;
+width:100%;
+height:100%;
+background:linear-gradient(#39FF14,#00ffef);
+clip-path:  polygon( 20% 10%,40% 40%, 65% 10%);
+
+}
+
+.traingle{
+    position: absolute;
+    top:15%;
+    left:0%;
+    width:100%;
+    height:100%;
+  
+    background:linear-gradient(#ff3c00,#e0c217);
+    clip-path: polygon(20% 10%,41% 47%,20% 75%);
+    transform:rotateY(180deg);
+}
+.traingle2{
+
+position:absolute;
+
+bottom: 0%;
+left:0%;
+width:100%;
+height:100%;
+background:linear-gradient(#39FF14,#00ffef);
+clip-path:  polygon( 20% 10%,40% 40%, 65% 10%);
+transform:rotateZ(180deg);
+} 
+/*.traingle{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    left:20%;
+    top:30%;
+    background:linear-gradient(#FFFFFF,#0000FF);
+    clip-path:circle(18%);
+
+}
+*/
+.clock{
+    position:absolute;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:650px;
+    height:400px;
+    background:rgba(0,0,0,0.1);
+    overflow: hidden;
+    z-index:10;
+    backdrop-filter:blur(10px);
+    border-top:1px solid rgba(225,225,225,0.2);
+    border-left:1px solid rgba(225,225,225,0.2);
+    box-shadow:15px 10px 30px rgba(0,0,0,0.2);
+    display:flex;
+    text-align:center;
+    font-family:'Quicksand','Helvetica',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.inside{
+    position:absolute;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:550px;
+    height:300px;
+    border-top:1px solid rgba(225,225,225,0.2);
+    border-left:1px solid rgba(225,225,225,0.2);
+    box-shadow:15px 10px 30px rgba(0,0,0,0.2);
+    display:flex;
+
+}
+.time{
+    font-size:4rem;
+    text-align: center;
+    position:relative;
+   left:4%;
+    bottom:0%;
+    top:0%;
+    color:#FFFFFF;
+}
+.quote-box{
+position:relative;
+text-align:center;
+
+color:azure;}
